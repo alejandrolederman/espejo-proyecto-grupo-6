@@ -77,6 +77,11 @@ header .form .submit{
     width: 10%;
 }
 
+.input{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900
+}
+
 /* HASTA ACA ES EL HEADER*/
 
 /* ACA COMIENZA EL MAIN QUE CONTIENE main-navbar-left, ACTUALMENTE LOGO EN EL MEDIO Y main-navbar-right*/
