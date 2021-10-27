@@ -37,6 +37,10 @@ text-decoration: none;
 
 /* DESDE ACA ES EL HEDER, HUBICACION DEL LOGO, LA BARRA DE BUSQUEDA, REGISTRO DE USUARIO, CARRITO Y ICONO DE AYUDA*/
 
+.busqueda{
+    display: flex;
+  }
+
 .menu-right-header{ 
     text-align: right;
     display: flex;
@@ -195,21 +199,17 @@ ul{
 } */
 
 .main-comprar{
-    width: 100%;
-    
-   
+    width: 100%; 
 }
 
 .article-comprar{
     border: solid red 5px;
     margin: 10px;
-    display: flex;
-    
+    display: flex;  
 } 
 
 .imagen-comprar{
-    width: 20%;
-   
+    width: 20%;  
 } 
 
 /* nav  div {
@@ -262,6 +262,25 @@ ul{
         align-items: center;
         align-content: center;
     }
+
+    .input{
+        display: block;
+        margin-top: 15px;
+    }
+
+    .header-usuraio{
+        display: none;
+    }
+
+    .main-iconos{
+        display: flex;
+        justify-content: space-around;
+        margin: 15px 0;
+    }
+    
+    .nombre{
+        text-align: center;
+    }
 } 
 
 @media(max-width: 450px){
@@ -276,11 +295,8 @@ ul{
     }
 
     div .producto-comprar{
-        
         border: black solid 5px;
     }
-
-
 }
 
 @media(max-width: 632px){
@@ -316,7 +332,5 @@ ul{
 
     div .menu-right-header i{
         size: 5px;           
-    }
-    
-    
+    }  
 }
