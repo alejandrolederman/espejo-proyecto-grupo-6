@@ -1,0 +1,322 @@
+*{ 
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box; 
+ } 
+
+body{
+    font-family: "Roboto";
+    background-color: #ebebeb; 
+    width: 100%;  
+}
+
+p{
+    font-size: 12px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.main-header{
+    background: #2596be;
+    padding: 30px;
+    font-size: 12px;
+}
+
+.logo{
+    width: 200px;
+    margin-top: 20px;
+}
+
+i, a{
+text-decoration: none;
+    color: black;
+}
+/* HASTA ACA ES EL BODY Y TODO LO GENERAL*/
+
+/* DESDE ACA ES EL HEDER, HUBICACION DEL LOGO, LA BARRA DE BUSQUEDA, REGISTRO DE USUARIO, CARRITO Y ICONO DE AYUDA*/
+
+.menu-right-header{ 
+    text-align: right;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.menu-right-header i{
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 100%;
+    padding: 10px;
+    margin: 40px 0;  
+}
+
+ h3 i{
+    margin: 0 10px;
+} 
+
+.form{
+    flex-grow: 0.6;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+/* HASTA ACA ES EL HEADER*/
+
+/* ACA COMIENZA EL MAIN QUE CONTIENE main-navbar-left, ACTUALMENTE LOGO EN EL MEDIO Y main-navbar-right*/
+
+.main-first{
+    width: 100%;
+    padding: 15px;
+    font-size: 12px;
+    display: flex;
+    justify-content:space-evenly;   
+}
+
+.main-second{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+
+.main-navbar-left, .main-navbar-right{  
+    margin: 5px;
+}
+
+.imagen-main{
+    width: 100%;
+}
+
+.right-navbar a, .left-navbar a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 0;    
+}
+
+.main-navbar-right{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 254px;
+    text-align: end;
+}
+
+/* HASTA ACA ES EL PRIMER MAIN*/
+
+/* ACA COMIENZA EL SEGUNDO MAIN QUE CONTIENE LOS PRODUCTOS DESTACADOS*/
+
+.no-disponible{
+    width: 210px;
+}
+
+/* .main-first-comprar{
+       width: 100%;
+    padding: 15px;
+    font-size: 12px;
+    display: flex;
+    justify-content:space-evenly;  
+}  */
+
+.main-second-div{
+    margin: 0 10px;
+}
+
+/* ACA FINALIZA EL SEGUNDO MAIN*/
+
+/* ACA COMIENZA EL HTML DE CARRITO DE COMPRAS*/
+
+.carrito-prudctos{
+    margin: 10px;
+}
+
+.no-disponible-carrito{
+    width: 110px;
+    padding: 5px;
+    flex-grow: 0.2;
+} 
+
+ .carrito-compras-li{
+    box-shadow: 10px 0px 10px rgb(186, 186, 196);
+    display:flex;
+    align-content: space-around;
+    margin-bottom: 10px;
+} 
+
+.descripcion-carrito-compras{
+    flex-grow: 0.7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+} 
+
+.boton-compra-carrito{
+    background-color: red;
+    border:none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 20px;
+    width: 50%;
+    margin-left: 45%;
+}  
+
+/* ACA TERMINA EL HTML CARRITO DE COMPRAS*/
+
+/* ACA COMIENZA EL HTML DE COMPRAR*/
+
+/* .boton-comprar{
+    background-color: #39b54a;
+    border:none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+} */
+
+.main-comprar{
+    width: 100%;
+    
+   
+}
+
+.article-comprar{
+    border: solid red 5px;
+    margin: 10px;
+    display: flex;
+    
+} 
+
+.imagen-comprar{
+    width: 20%;
+   
+} 
+
+/* nav  div {
+    border:green solid 5px;
+    margin: 0 15px;
+} */
+
+.descripcion-producto-comprar{
+    border: turquoise solid 10px;
+} 
+
+/* article{
+    border: solid red 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 90%;
+    padding: 100px;
+    justify-content: space-between;
+} */
+
+/* ACA VAN LAS @MEDIA*/
+
+@media(max-width: 366px){
+
+    .carrito-compras-li{
+       flex-wrap: wrap;
+       flex-direction: column;
+       align-content: flex-start;
+       align-items: flex-start;
+    }
+
+    .desclipcion-carrito-compras{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-right-header h3 i{
+       display: none;
+    }
+
+    .menu-right-header i{
+        margin: 0 40px;
+        font-size: 40px;
+    }
+
+    .main-header-top-bar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+    }
+} 
+
+@media(max-width: 450px){
+    
+    .main-second{
+        justify-content: center;
+    }
+
+    .article-comprar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div .producto-comprar{
+        
+        border: black solid 5px;
+    }
+
+
+}
+
+@media(max-width: 632px){
+
+    .main-first{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    /* .main-first-comprar{
+        flex-wrap: wrap;
+        justify-content: start;
+    } */
+
+    .main-navbar-right li{
+        display: none;
+    }
+    .right-navbar{
+        align-self: center;
+        
+    }
+}
+
+@media(min-width: 768px){
+
+    .main-header-top-bar{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+
+    div .menu-right-header i{
+        size: 5px;           
+    }
+    
+    
+}
