@@ -8,8 +8,9 @@ body{
     font-family: "Roboto";
      height: 100%;
      background: rgb(160, 157, 157); 
-      background-image: url(/img/burbujas2.jpg);
+       background-image: url(/img/burbujas2.jpg);
      background-size: 100%; 
+     background-size: 100%;  
 }
 
 p{
@@ -228,37 +229,39 @@ main ul li a{
 
 /* ACA COMIENZA EL HTML DE COMPRAR*/
 
-.boton-comprar{
-    background-color: #39b54a;
-    border:none;
-    color: white;
-    font-size: 20px;
-    padding: 5px 10px;
-    border-radius: 15px;
-} 
+
 
 .main-comprar{
     width: 100%; 
 }
 
+.texto-comprar{
+    color: #FFF;
+}
+
 .article-comprar{
-    border: solid red 5px;
+    
     margin: 10px;
-    display: flex;  
+    display: flex; 
+    flex-wrap: wrap;
 } 
 
 .imagen-comprar{
-    width: 20%;  
+    width: 100%;  
+  
 } 
 
-/* nav  div {
-    border:green solid 5px;
-    margin: 0 15px;
-} */
+.producto-comprar{
+    align-items: center;
+}
 
 .descripcion-producto-comprar{
-    border: turquoise solid 10px;
+    width: 100%;
+    
 } 
+.button-comprar{
+    align-items: end;
+}
 
 /* article{
     border: solid red 5px;
