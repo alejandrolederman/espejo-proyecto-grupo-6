@@ -7,8 +7,9 @@
 body{
     font-family: "Roboto";
      height: 100%;
-     background-image: url(/img/burbujas2.jpg);
-     background-size: 100%;
+     background: rgb(160, 157, 157); 
+      background-image: url(/img/burbujas2.jpg);
+     background-size: 100%; 
 }
 
 p{
@@ -17,6 +18,10 @@ p{
 
 h3{
     font-size: 24px;
+}
+
+footer{
+    color: #FFF;
 }
 
 .main-header{
@@ -223,14 +228,14 @@ main ul li a{
 
 /* ACA COMIENZA EL HTML DE COMPRAR*/
 
-/* .boton-comprar{
+.boton-comprar{
     background-color: #39b54a;
     border:none;
     color: white;
     font-size: 20px;
     padding: 5px 10px;
     border-radius: 15px;
-} */
+} 
 
 .main-comprar{
     width: 100%; 
@@ -263,6 +268,107 @@ main ul li a{
     padding: 100px;
     justify-content: space-between;
 } */
+
+
+/*ACA COMIENZA EL HTML DEL FORMULARIO DE REGISTRO*/
+
+label{
+    color: #FFF;
+}
+.register{
+    display: flex;
+    flex-direction: column;
+}
+
+.fecha-registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.fecha-registro label, .text-color{
+    color: #FFF;
+    margin-left: 15px;
+}
+
+.nombre-registro, .pass-registro{
+    width: 90%;
+    padding: 8px;
+    margin: 15px;
+    border-radius: 10px; 
+    box-shadow: 10px 0px 10px rgb(127, 127, 129);
+}
+
+.interests, .imagen-perfil{
+    margin-left: 15px;
+}
+
+.imagen-perfil{
+    width: 100%;
+}
+
+.button{
+    font-family: "Roboto";
+    color: white;
+    border: none;
+    background: green;
+    margin-top: 15px;
+    font-size: 20px;
+    width: 300px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+button::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(-100% - 80px);
+    border-bottom: 80px solid rgb(39, 182, 39);
+    border-right: 80px solid transparent;
+    transition: .4s ease-in-out all;
+}
+
+button:hover::after{
+    left: 0;
+}
+.button span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+/* HASTA ACA ES EL HTML DEL FORMULARIO DE REGISTRO*/
+
+/* ACA COMIENZA EL HTML DEL LOGIN*/
+
+.h1-login{
+    color:#FFF
+}
+
+.main-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-login form{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.main-div-login{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* ACA VAN LAS @MEDIA*/
 

@@ -22,8 +22,8 @@
                         <input type="text" name="nombre" placeholder="Busca lo que quieras           " class="input">
                     </div>  
                     <div class="menu-right-header">
-                           <i class="fas fa-user"></i>
-                           <a href="/views/formulario-registro.html"><span class="header-usuraio">   username    </span></a>
+                            <a href="/views/formulario-registro.html"><i class="fas fa-user"></i></a>
+                            <a href="/views/formulario-registro.html"><span class="header-usuraio">   username    </span></a>
                             <a href= "/views/carrito-de-compras.html"><i class="fas fa-shopping-cart"></i></a>
                             <i class="far fa-question-circle"></i> 
                         </div>      
@@ -34,26 +34,20 @@
             </div>
      </header>
     <main>
-      <div class="main-left">
-        <h3>Qué celu buscas?</h3>
-        <ul>
-            <li><a href="#">Por marca</a></li>
-            <li><a href="#">Por precio</a></li>
-            <li><a href="#">Por gama</a></li>
-            <li><a href="#">Por año de salida</a></li>
-            <li><a href="#">Por reseñas</a></li>
-            <li><a href="#">Por ubicacion</a></li>
-        </ul>
-        <h3>Ayudame a buscar!</h3>
-      </div>
-      <div> 
-        <h1>BIENVENIDO</h1>
+      <div class="main-login"> 
+        <h1 class="h1-login">BIENVENIDO</h1>
         <form action="/" method="post">
-            <label for="user"> NOMBRE DE USUARIO</label>
-            <input type="text" name="user" required minlength="8" requiere maxlength="16">
-            <label for="password"> CONTRASEÑA</label>
-            <input type="password" name= "clave">
-            <button name= "button"> INGRESAR</button>
+            <div class="main-div-login">
+            <!-- <label for="user"> NOMBRE DE USUARIO</label> -->
+            <input type="text" name="user" placeholder="nombre de usuario" required minlength="8" requiere maxlength="16" class="nombre-registro">
+        </div>
+        <div class="main-div-login">
+            <!-- <label for="password"> CONTRASEÑA</label> -->
+            <input type= "password" name="pass" placeholder="contraseña" minlength="6" class="pass-registro">
+        </div>
+        <div class="main-div-login">
+            <button class="button" name= "button"><span> ingresar</span></button> 
+        </div>
         </form>
        </div>
 
